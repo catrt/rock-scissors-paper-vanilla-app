@@ -1,0 +1,166 @@
+/* Common */
+body {
+    color: #c8c8c8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #333;
+    -webkit-user-select: none;
+    user-select: none;
+}
+a {
+    color: #c8c8c8;
+    text-decoration: none;
+}
+img {
+    -webkit-user-select: none;
+    user-select: none;
+}
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+header {
+    background-color: #c8c8c8;
+}
+header .title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .title a {
+    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/* Score Board */
+.score-board .inner {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.score-board .material-symbols-outlined {
+    font-size: 55px;
+}
+.score-board .board {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border: 4px solid #c8c8c8;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score-board .board > * {
+    font-size: 50px;
+    text-align: center;
+}
+.score-board .board .cpu-score {
+    flex-grow: 1;
+}
+.score-board .board .mid {
+    width: 15px;
+}
+.score-board .board .user-score {
+    flex-grow: 1;
+}
+
+
+/* Action */
+.action .inner {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.action .cpu-choose,
+.action .user-choose {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action .cpu-choose img,
+.action .user-choose img {
+    width: 80px;
+    height: 80px;
+}
+.action .vs {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* Result */
+.result {
+    margin-bottom: 20px;
+}
+.result .inner {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result .text {
+    font-size: 20px;
+}
+
+
+/* Choose */
+.choose .inner {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose .rsp {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.choose .rsp > div {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.choose .rsp > div:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+.choose .rsp > div img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Description */
+.description {
+    margin: 11px 0;
+}
+.description .inner {
+    font-size: 20px;
+    text-align: center;
+}
